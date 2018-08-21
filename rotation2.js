@@ -19,7 +19,19 @@ function rotateRightmostDigits(digits, num) {
   }
   console.log(newArray.join(''));
 }
+// alternative
+// function rotateRightmostDigits(number, n) {
+//   var numberString = String(number);
+//   var firstPart = numberString.slice(0, numberString.length - n);
+//   var secondPart = numberString.slice(numberString.length - n);
+//   var resultString = firstPart + rotateString(secondPart);
 
+//   return Number(resultString);
+// }
+
+// function rotateString(string) {
+//   return string.slice(1) + string[0];
+// }
 
 rotateRightmostDigits(735291, 1);      // 735291
 rotateRightmostDigits(735291, 2);      // 735219
